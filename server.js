@@ -5,8 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articles={
+    
+    
 
-var articleone ={
+ 'article-one' :{
   title: 'article one | satish solanke',
   heading: 'article one',
   date: 'sep 17, 2016',
@@ -27,7 +30,55 @@ var articleone ={
                   this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
                    this is article one.i'm building my apps using iitm lecture
                  </p> 
-                 `
+          `
+},
+
+'article-two' : { 
+    
+    title: 'article two | satish solanke',
+  heading: 'article two',
+  date: 'sep 20, 2016',
+  content:  
+    ` 
+        <p>
+            this is article two.i'm building my apps using iitm lecture. this is article one.i'm building my apps using iitm lecture
+                      this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                  this is article two.i'm building my apps using iitm lecture
+                </p>
+                <p>
+                        this is article two.i'm building my apps using iitm lecture
+                     this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                    this is article two.i'm building my apps using iitm lecture
+                </p>
+                  <p>
+                      this is article two.i'm building my apps using iitm lecture
+                  this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                   this is article one.i'm building my apps using iitm lecture
+                 </p> 
+          `},
+'article-three' :
+    { title: 'article three | satish solanke',
+  heading: 'article three',
+  date: 'sep 19, 2016',
+  content:  
+    ` 
+        <p>
+            this is article one.i'm building my apps using iitm lecture. this is article one.i'm building my apps using iitm lecture
+                      this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                  this is article one.i'm building my apps using iitm lecture
+                </p>
+                <p>
+                        this is article one.i'm building my apps using iitm lecture
+                     this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                    this is article one.i'm building my apps using iitm lecture
+                </p>
+                  <p>
+                      this is article one.i'm building my apps using iitm lecture
+                  this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
+                   this is article one.i'm building my apps using iitm lecture
+                 </p> 
+          `}
+    
 };
 
 function createTemplate (data)
@@ -77,15 +128,11 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res){
-   res.send(createTemplate(articleone));
+app.get('/articleName',function(req,res){
+    var articleName = req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
-app.get('/article-two',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
