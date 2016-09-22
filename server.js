@@ -41,19 +41,7 @@ var articles={
   content:  
     ` 
         <p>
-            this is article two.i'm building my apps using iitm lecture. this is article one.i'm building my apps using iitm lecture
-                      this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                  this is article two.i'm building my apps using iitm lecture
-                </p>
-                <p>
-                        this is article two.i'm building my apps using iitm lecture
-                     this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                    this is article two.i'm building my apps using iitm lecture
-                </p>
-                  <p>
-                      this is article two.i'm building my apps using iitm lecture
-                  this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                   this is article one.i'm building my apps using iitm lecture
+            this is article two.
                  </p> 
           `},
 'article-three' :
@@ -63,19 +51,7 @@ var articles={
   content:  
     ` 
         <p>
-            this is article one.i'm building my apps using iitm lecture. this is article one.i'm building my apps using iitm lecture
-                      this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                  this is article one.i'm building my apps using iitm lecture
-                </p>
-                <p>
-                        this is article one.i'm building my apps using iitm lecture
-                     this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                    this is article one.i'm building my apps using iitm lecture
-                </p>
-                  <p>
-                      this is article one.i'm building my apps using iitm lecture
-                  this is article one.i'm building my apps using iitm lecture this is article one.i'm building my apps using iitm lecture
-                   this is article one.i'm building my apps using iitm lecture
+            this is article three.
                  </p> 
           `}
     
