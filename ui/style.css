@@ -20,7 +20,7 @@ body {
     height: 200px;
 }
 
-        .container{
+.container{
                     max-width: 900px;
                      margin: 0 auto;
                      color: red;
@@ -28,4 +28,4 @@ body {
                           padding-top: 70px;
                     padding-left: 20px;
                         padding-right: 15px
-                     }
+}
