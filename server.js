@@ -53,7 +53,7 @@ var articles={
         <p>
             this is article three.
                  </p> 
-          `}
+          `},
     
 };
 
